@@ -17,6 +17,7 @@ const navHeader = document.querySelector(".nav-header");
 
 const darkMode = document.getElementById("dark");
 
+// Contact Information Toggle - triggers animation
 contactBtn.addEventListener("click", () => {
   contactInfo.classList.toggle("active");
   if (jobExp.classList.contains("active")) {
@@ -24,6 +25,7 @@ contactBtn.addEventListener("click", () => {
   }
 });
 
+// Job Experience Toggle - triggers animation
 jobExpBtn.addEventListener("click", () => {
   jobExp.classList.toggle("active");
   if (contactInfo.classList.contains("active")) {
@@ -31,11 +33,13 @@ jobExpBtn.addEventListener("click", () => {
   }
 });
 
+// About Me Section toggle - triggers animation
 aboutMeBtn.addEventListener("click", () => {
   aboutMe.classList.toggle("active");
   aboutMeOverlay.classList.toggle("active");
 });
 
+// Language selection btns - link to another html page
 langBtnEng.addEventListener("click", (btn) => {
   if (btn.target.id === "langBtnEng") {
     document.getElementById("langBtnEng").hidden = true;
@@ -50,6 +54,7 @@ langBtnSlo.addEventListener("click", (btn) => {
   }
 });
 
+// Dark Mode Toggle
 darkMode.addEventListener("click", () => {
   if (darkMode.classList.contains("dark")) {
     darkMode.classList.remove("dark");
